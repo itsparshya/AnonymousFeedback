@@ -3,8 +3,6 @@ import UserModel from "@/model/User";
 import bcrypt from "bcryptjs";
 
 import { sendVarificationEmail } from "@/helper/sendVarificationEmailCode";
-import { ApiResponse } from "@/types/ApiResponse";
-import { is } from "zod/locales";
 
 export async function POST(request: Request) {
   await dbConnect();
